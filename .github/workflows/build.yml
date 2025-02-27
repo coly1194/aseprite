@@ -6,7 +6,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-latest]
+        os: [windows-latest, macos-latest]
         build_type: [RelWithDebInfo, Debug]
         ui: [gui, cli]
         scripting: [lua, noscripts]
@@ -98,4 +98,4 @@ jobs:
         path: |
           libcrypto-1_1-x64.dll
           D:/a/aseprite/aseprite/build/bin/data
-          D:/a/aseprite/aseprite/build/bin/aseprite.exe
+          D:/a/aseprite/aseprite/build/bin/aseprite.dmg
